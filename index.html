@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Arshid | Brand Style Website</title>
+  <title>Arshid | Premium Experience</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800&display=swap" rel="stylesheet">
+
   <style>
-    * {margin:0;padding:0;box-sizing:border-box;font-family:Arial, sans-serif;}
-    body {background:black;color:white;}
+    * {margin:0;padding:0;box-sizing:border-box;}
+    body {font-family:'Poppins',sans-serif;background:black;color:white;overflow-x:hidden;}
 
     nav {
       position:fixed;
@@ -13,37 +17,51 @@
       display:flex;
       justify-content:space-between;
       padding:20px 50px;
-      background:rgba(0,0,0,0.7);
+      background:rgba(0,0,0,0.6);
+      z-index:10;
     }
 
     nav a {
       color:white;
       text-decoration:none;
       margin-left:25px;
-      font-weight:bold;
+      font-weight:600;
       letter-spacing:1px;
     }
 
     .hero {
       height:100vh;
-      background:linear-gradient(to right,#000000,#434343);
+      background:url('https://images.unsplash.com/photo-1519741497674-611481863552') no-repeat center center/cover;
       display:flex;
-      flex-direction:column;
       justify-content:center;
       align-items:center;
       text-align:center;
+      position:relative;
+    }
+
+    .hero::before {
+      content:'';
+      position:absolute;
+      width:100%;
+      height:100%;
+      background:rgba(0,0,0,0.6);
+    }
+
+    .hero-content {
+      position:relative;
+      animation:fadeIn 2s ease forwards;
     }
 
     .hero h1 {
-      font-size:60px;
-      font-weight:bold;
-      letter-spacing:3px;
+      font-size:65px;
+      font-weight:800;
+      letter-spacing:4px;
     }
 
     .hero p {
-      margin-top:15px;
+      margin-top:20px;
       font-size:20px;
-      opacity:0.8;
+      font-weight:300;
     }
 
     .btn {
@@ -52,34 +70,17 @@
       background:white;
       color:black;
       text-decoration:none;
-      font-weight:bold;
+      font-weight:600;
       border-radius:30px;
       transition:0.3s;
     }
 
-    .btn:hover {
-      background:#ccc;
-    }
+    .btn:hover {background:#ddd;}
 
     section {
-      padding:100px 20px;
+      padding:120px 20px;
       text-align:center;
-    }
-
-    .cards {
-      display:flex;
-      justify-content:center;
-      gap:30px;
-      flex-wrap:wrap;
-      margin-top:40px;
-    }
-
-    .card {
-      background:white;
-      color:black;
-      padding:30px;
-      width:250px;
-      border-radius:10px;
+      animation:fadeUp 1.5s ease forwards;
     }
 
     footer {
@@ -88,6 +89,17 @@
       background:#111;
       font-size:14px;
     }
+
+    @keyframes fadeIn {
+      from {opacity:0;transform:translateY(40px);}
+      to {opacity:1;transform:translateY(0);}
+    }
+
+    @keyframes fadeUp {
+      from {opacity:0;transform:translateY(60px);}
+      to {opacity:1;transform:translateY(0);}
+    }
+
   </style>
 </head>
 <body>
@@ -103,22 +115,20 @@
   </nav>
 
   <div class="hero">
-    <h1>CREATE. BUILD. DOMINATE.</h1>
-    <p>Modern Web Experiences by Arshid</p>
-    <a href="#" class="btn">Explore Now</a>
+    <div class="hero-content">
+      <h1>DEFINE YOUR FUTURE</h1>
+      <p>Premium Digital Experiences</p>
+      <a href="#" class="btn">Explore</a>
+    </div>
   </div>
 
   <section>
-    <h2>What I Do</h2>
-    <div class="cards">
-      <div class="card">Web Design</div>
-      <div class="card">UI Development</div>
-      <div class="card">AI Powered Projects</div>
-    </div>
+    <h2>About</h2>
+    <p>I create powerful and modern web experiences using cutting-edge tools.</p>
   </section>
 
   <footer>
-    © 2026 Arshid | Premium Brand Style Website
+    © 2026 Arshid | Premium Brand Experience
   </footer>
 
 </body>

@@ -1,101 +1,160 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Arshid Ali | Personal Website</title>
+  <title>Arshid Ali</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 
   <style>
-    * { margin:0; padding:0; box-sizing:border-box; font-family:'Poppins',sans-serif; }
-    body { background:#fff; color:#111; }
+    * {margin:0;padding:0;box-sizing:border-box;}
+    body {
+      font-family:'Inter',sans-serif;
+      background:#0f0f0f;
+      color:#eaeaea;
+    }
+
+    .container {
+      max-width:1100px;
+      margin:auto;
+      padding:60px 20px;
+    }
 
     nav {
-      display:flex; justify-content:space-between; align-items:center;
-      padding:20px 40px; background:#fff; border-bottom:1px solid #ddd;
-      position:sticky; top:0; z-index:100;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:30px 0;
     }
-    nav a { margin-left:20px; font-weight:600; text-decoration:none; color:#111; }
-    nav a:hover { color:#0077ff; }
+
+    nav a {
+      color:#aaa;
+      text-decoration:none;
+      margin-left:30px;
+      font-weight:500;
+      font-size:14px;
+    }
+
+    nav a:hover {
+      color:#fff;
+    }
 
     .hero {
-      padding:120px 20px; text-align:center;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      height:80vh;
     }
-    .hero h1 { font-size:48px; font-weight:700; }
-    .hero p { font-size:20px; margin-top:10px; color:#555; }
 
-    .btn-main {
-      display:inline-block; margin-top:30px; padding:12px 30px;
-      background:#0077ff; color:white; border-radius:6px; text-decoration:none;
+    .hero h1 {
+      font-size:56px;
+      font-weight:800;
+      max-width:700px;
+      line-height:1.1;
+    }
+
+    .hero p {
+      margin-top:20px;
+      font-size:20px;
+      color:#888;
+      max-width:600px;
+    }
+
+    .btn {
+      display:inline-block;
+      margin-top:30px;
+      padding:14px 28px;
+      background:#ffffff;
+      color:#000;
+      text-decoration:none;
+      border-radius:6px;
       font-weight:600;
-    }
-    .btn-main:hover { background:#005fcc; }
-
-    .container { max-width:900px; margin:auto; padding:60px 20px; }
-
-    h2 { font-size:28px; font-weight:600; margin-bottom:20px; text-align:center; color:#111; }
-
-    .about-text, .contact-card {
-      background:#f9f9f9; padding:25px; border-radius:10px; color:#333;
+      transition:0.3s;
     }
 
-    .contact-links a {
-      display:block; margin-top:10px; color:#0077ff; text-decoration:none;
+    .btn:hover {
+      opacity:0.8;
     }
-    .contact-links a:hover { text-decoration:underline; }
+
+    section {
+      margin-top:120px;
+    }
+
+    h2 {
+      font-size:28px;
+      margin-bottom:20px;
+    }
+
+    .card {
+      background:#1a1a1a;
+      padding:30px;
+      border-radius:10px;
+      color:#bbb;
+    }
 
     footer {
-      text-align:center; padding:20px; margin-top:40px; color:#777; font-size:14px;
+      margin-top:120px;
+      padding:40px 0;
+      text-align:center;
+      font-size:14px;
+      color:#555;
+    }
+
+    @media(max-width:768px){
+      .hero h1 {
+        font-size:38px;
+      }
     }
   </style>
 </head>
 
 <body>
 
+<div class="container">
+
   <nav>
-    <div><strong>Arshid Ali</strong></div>
+    <div><strong>Arshid</strong></div>
     <div>
       <a href="#about">About</a>
-      <a href="#work">Work</a>
       <a href="#contact">Contact</a>
     </div>
   </nav>
 
   <div class="hero">
-    <h1>Hello, I’m Arshid 👋</h1>
-    <p>Web Developer • Creator • Learner</p>
-    <a href="#contact" class="btn-main">Connect With Me</a>
+    <h1>
+      Building digital products with clarity, purpose, and modern design.
+    </h1>
+    <p>
+      I’m Arshid Ali — a self-taught web developer focused on creating clean,
+      scalable and user-focused web experiences.
+    </p>
+    <a href="#contact" class="btn">Let’s Connect</a>
   </div>
 
-  <div id="about" class="container">
-    <h2>About Me</h2>
-    <div class="about-text">
-      <p>Hello! I’m a web developer from Srinagar. I build clean, modern, and responsive websites and love learning new tech. I focus on creating meaningful online experiences that reflect my passion and creativity.</p>
+  <section id="about">
+    <h2>About</h2>
+    <div class="card">
+      <p>
+I am Arshid Ali, 26 years old, and I hold a Master’s degree in Zoology.
+Currently, I am exploring web development and expanding my knowledge
+in technology while building new skills for the future. 
+      </p>
     </div>
-  </div>
+  </section>
 
-  <div id="work" class="container">
-    <h2>Featured Work</h2>
-    <div class="about-text">
-      <p>I’ve worked on projects using HTML, CSS, JavaScript, and AI tools. I enjoy building websites that are both functional and beautiful.</p>
-    </div>
-  </div>
-
-  <div id="contact" class="container">
+  <section id="contact">
     <h2>Contact</h2>
-    <div class="contact-card">
-      <p>Feel free to reach out via email or WhatsApp:</p>
-      <div class="contact-links">
-        <a href="mailto:sofiarshidali@gmail.com">📧 youremail@example.com</a>
-        <a href="https://wa.me/919682583847">💬 WhatsApp Me</a>
-      </div>
+    <div class="card">
+      <p>Email: sofiarshidali@gmail.com</p>
+      <br>
+      <p>WhatsApp: +919682583847</p>
     </div>
-  </div>
+  </section>
 
   <footer>
     © 2026 Arshid Ali
   </footer>
+
+</div>
 
 </body>
 </html>

@@ -1,79 +1,118 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Arshid Ali | Official Website</title>
+  <title>Arshid Ali | Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: Arial, sans-serif;
+    * { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; font-family: Arial, sans-serif; }
+
+    body { background: #0f2027; background: linear-gradient(to right, #2c5364, #203a43, #0f2027); color: white; }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 50px;
+      background: rgba(0,0,0,0.3);
+      position: fixed;
+      width: 100%;
+      top: 0;
     }
 
-    body {
-      background: linear-gradient(135deg, #1e3c72, #2a5298);
+    nav a {
       color: white;
-      text-align: center;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: bold;
     }
 
     header {
-      padding: 80px 20px;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding-top: 60px;
     }
 
-    h1 {
-      font-size: 40px;
-      margin-bottom: 10px;
-    }
-
-    p {
-      font-size: 18px;
-      margin-bottom: 30px;
-    }
+    h1 { font-size: 45px; }
 
     .btn {
-      display: inline-block;
+      margin-top: 20px;
       padding: 12px 25px;
-      background: white;
-      color: #1e3c72;
+      background: #00c6ff;
+      color: black;
+      border-radius: 25px;
       text-decoration: none;
-      border-radius: 30px;
       font-weight: bold;
-      transition: 0.3s;
-    }
-
-    .btn:hover {
-      background: #ddd;
     }
 
     section {
-      padding: 60px 20px;
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    .skills {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .skill-box {
       background: white;
-      color: #333;
+      color: black;
+      padding: 10px 20px;
+      border-radius: 20px;
     }
 
     footer {
+      text-align: center;
       padding: 20px;
-      background: #111;
-      font-size: 14px;
+      background: black;
     }
   </style>
 </head>
 <body>
 
+  <nav>
+    <div><strong>Arshid</strong></div>
+    <div>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
   <header>
     <h1>Hi, I'm Arshid 👋</h1>
-    <p>Welcome to my professional website</p>
-    <a href="#" class="btn">Contact Me</a>
+    <p>Aspiring Web Developer</p>
+    <a href="#contact" class="btn">Contact Me</a>
   </header>
 
-  <section>
+  <section id="about">
     <h2>About Me</h2>
-    <p>I am learning web development and building amazing things using AI.</p>
+    <p>I am building websites and learning modern web development using AI tools.</p>
+  </section>
+
+  <section id="skills">
+    <h2>My Skills</h2>
+    <div class="skills">
+      <div class="skill-box">HTML</div>
+      <div class="skill-box">CSS</div>
+      <div class="skill-box">GitHub</div>
+      <div class="skill-box">AI Tools</div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: your@email.com</p>
   </section>
 
   <footer>
-    © 2026 Arshid Ali | Built with GitHub Pages
+    © 2026 Arshid Ali | Portfolio Website
   </footer>
 
 </body>

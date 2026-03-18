@@ -1,118 +1,124 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Arshid Ali | Portfolio</title>
+  <title>Arshid | Brand Style Website</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; font-family: Arial, sans-serif; }
-
-    body { background: #0f2027; background: linear-gradient(to right, #2c5364, #203a43, #0f2027); color: white; }
+    * {margin:0;padding:0;box-sizing:border-box;font-family:Arial, sans-serif;}
+    body {background:black;color:white;}
 
     nav {
-      display: flex;
-      justify-content: space-between;
-      padding: 20px 50px;
-      background: rgba(0,0,0,0.3);
-      position: fixed;
-      width: 100%;
-      top: 0;
+      position:fixed;
+      width:100%;
+      display:flex;
+      justify-content:space-between;
+      padding:20px 50px;
+      background:rgba(0,0,0,0.7);
     }
 
     nav a {
-      color: white;
-      text-decoration: none;
-      margin-left: 20px;
-      font-weight: bold;
+      color:white;
+      text-decoration:none;
+      margin-left:25px;
+      font-weight:bold;
+      letter-spacing:1px;
     }
 
-    header {
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      padding-top: 60px;
+    .hero {
+      height:100vh;
+      background:linear-gradient(to right,#000000,#434343);
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
     }
 
-    h1 { font-size: 45px; }
+    .hero h1 {
+      font-size:60px;
+      font-weight:bold;
+      letter-spacing:3px;
+    }
+
+    .hero p {
+      margin-top:15px;
+      font-size:20px;
+      opacity:0.8;
+    }
 
     .btn {
-      margin-top: 20px;
-      padding: 12px 25px;
-      background: #00c6ff;
-      color: black;
-      border-radius: 25px;
-      text-decoration: none;
-      font-weight: bold;
+      margin-top:30px;
+      padding:15px 35px;
+      background:white;
+      color:black;
+      text-decoration:none;
+      font-weight:bold;
+      border-radius:30px;
+      transition:0.3s;
+    }
+
+    .btn:hover {
+      background:#ccc;
     }
 
     section {
-      padding: 80px 20px;
-      text-align: center;
+      padding:100px 20px;
+      text-align:center;
     }
 
-    .skills {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 15px;
-      margin-top: 20px;
+    .cards {
+      display:flex;
+      justify-content:center;
+      gap:30px;
+      flex-wrap:wrap;
+      margin-top:40px;
     }
 
-    .skill-box {
-      background: white;
-      color: black;
-      padding: 10px 20px;
-      border-radius: 20px;
+    .card {
+      background:white;
+      color:black;
+      padding:30px;
+      width:250px;
+      border-radius:10px;
     }
 
     footer {
-      text-align: center;
-      padding: 20px;
-      background: black;
+      padding:20px;
+      text-align:center;
+      background:#111;
+      font-size:14px;
     }
   </style>
 </head>
 <body>
 
   <nav>
-    <div><strong>Arshid</strong></div>
+    <div><strong>ARSHID</strong></div>
     <div>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#contact">Contact</a>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Work</a>
+      <a href="#">Contact</a>
     </div>
   </nav>
 
-  <header>
-    <h1>Hi, I'm Arshid 👋</h1>
-    <p>Aspiring Web Developer</p>
-    <a href="#contact" class="btn">Contact Me</a>
-  </header>
+  <div class="hero">
+    <h1>CREATE. BUILD. DOMINATE.</h1>
+    <p>Modern Web Experiences by Arshid</p>
+    <a href="#" class="btn">Explore Now</a>
+  </div>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>I am building websites and learning modern web development using AI tools.</p>
-  </section>
-
-  <section id="skills">
-    <h2>My Skills</h2>
-    <div class="skills">
-      <div class="skill-box">HTML</div>
-      <div class="skill-box">CSS</div>
-      <div class="skill-box">GitHub</div>
-      <div class="skill-box">AI Tools</div>
+  <section>
+    <h2>What I Do</h2>
+    <div class="cards">
+      <div class="card">Web Design</div>
+      <div class="card">UI Development</div>
+      <div class="card">AI Powered Projects</div>
     </div>
   </section>
 
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <p>Email: your@email.com</p>
-  </section>
-
   <footer>
-    © 2026 Arshid Ali | Portfolio Website
+    © 2026 Arshid | Premium Brand Style Website
   </footer>
 
 </body>

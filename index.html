@@ -1,16 +1,101 @@
-<section>
-  <h2>About</h2>
-  <p>I create powerful and modern web experiences using cutting-edge tools.</p>
-</section>
-<section id="contact">
-  <h2>Contact Me</h2>
-  <p>You can reach me directly:</p>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Arshid Ali | Personal Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <br>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-  <a href="mailto:sofiarshidali@com" class="btn">📧 Email Me</a>
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; font-family:'Poppins',sans-serif; }
+    body { background:#fff; color:#111; }
 
-  <br><br>
+    nav {
+      display:flex; justify-content:space-between; align-items:center;
+      padding:20px 40px; background:#fff; border-bottom:1px solid #ddd;
+      position:sticky; top:0; z-index:100;
+    }
+    nav a { margin-left:20px; font-weight:600; text-decoration:none; color:#111; }
+    nav a:hover { color:#0077ff; }
 
-  <a href="https://wa.me/919682583847" class="btn">💬 WhatsApp Me</a>
-</section>
+    .hero {
+      padding:120px 20px; text-align:center;
+    }
+    .hero h1 { font-size:48px; font-weight:700; }
+    .hero p { font-size:20px; margin-top:10px; color:#555; }
+
+    .btn-main {
+      display:inline-block; margin-top:30px; padding:12px 30px;
+      background:#0077ff; color:white; border-radius:6px; text-decoration:none;
+      font-weight:600;
+    }
+    .btn-main:hover { background:#005fcc; }
+
+    .container { max-width:900px; margin:auto; padding:60px 20px; }
+
+    h2 { font-size:28px; font-weight:600; margin-bottom:20px; text-align:center; color:#111; }
+
+    .about-text, .contact-card {
+      background:#f9f9f9; padding:25px; border-radius:10px; color:#333;
+    }
+
+    .contact-links a {
+      display:block; margin-top:10px; color:#0077ff; text-decoration:none;
+    }
+    .contact-links a:hover { text-decoration:underline; }
+
+    footer {
+      text-align:center; padding:20px; margin-top:40px; color:#777; font-size:14px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <div><strong>Arshid Ali</strong></div>
+    <div>
+      <a href="#about">About</a>
+      <a href="#work">Work</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <div class="hero">
+    <h1>Hello, I’m Arshid 👋</h1>
+    <p>Web Developer • Creator • Learner</p>
+    <a href="#contact" class="btn-main">Connect With Me</a>
+  </div>
+
+  <div id="about" class="container">
+    <h2>About Me</h2>
+    <div class="about-text">
+      <p>Hello! I’m a web developer from Srinagar. I build clean, modern, and responsive websites and love learning new tech. I focus on creating meaningful online experiences that reflect my passion and creativity.</p>
+    </div>
+  </div>
+
+  <div id="work" class="container">
+    <h2>Featured Work</h2>
+    <div class="about-text">
+      <p>I’ve worked on projects using HTML, CSS, JavaScript, and AI tools. I enjoy building websites that are both functional and beautiful.</p>
+    </div>
+  </div>
+
+  <div id="contact" class="container">
+    <h2>Contact</h2>
+    <div class="contact-card">
+      <p>Feel free to reach out via email or WhatsApp:</p>
+      <div class="contact-links">
+        <a href="mailto:sofiarshidali@gmail.com">📧 youremail@example.com</a>
+        <a href="https://wa.me/919682583847">💬 WhatsApp Me</a>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    © 2026 Arshid Ali
+  </footer>
+
+</body>
+</html>
